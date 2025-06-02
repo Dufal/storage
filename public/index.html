@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malware Storage | ЦКБ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/mammoth@1.4.0/mammoth.browser.min.js"></script>
+</head>
+<body>
+<div class="cyber-container">
+    <!-- Боковая панель -->
+    <aside class="cyber-sidebar">
+        <h2><span class="neon-blue">[</span> КАТЕГОРИИ <span class="neon-blue">]</span></h2>
+        <div class="category-controls">
+            <!-- Основная кнопка All Files -->
+            <button class="all-files-btn category-btn active" data-category="all" data-group="all">
+                ВСЕ ФАЙЛЫ
+                <span class="toggle-icon">▼</span>
+            </button>
+            <ul class="category-list" data-group="all">
+                <li data-category="all->Трояны">ТРОЯНЫ</li>
+                <li data-category="all->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="all->Черви">ЧЕРВИ</li>
+                <li data-category="all->Шпионы">ШПИОНЫ</li>
+                <li data-category="all->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <!-- Список специальных кнопок -->
+            <button class="category-btn" data-category="ГПК" data-group="ГПК">
+                ГПК
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="ГПК">
+                <li data-category="ГПК->Трояны">ТРОЯНЫ</li>
+                <li data-category="ГПК->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="ГПК->Черви">ЧЕРВИ</li>
+                <li data-category="ГПК->Шпионы">ШПИОНЫ</li>
+                <li data-category="ГПК->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <!-- Повторите для всех остальных кнопок -->
+            <button class="category-btn" data-category="1234" data-group="1234">
+                1234
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="1234">
+                <li data-category="1234->Трояны">ТРОЯНЫ</li>
+                <li data-category="1234->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="1234->Черви">ЧЕРВИ</li>
+                <li data-category="1234->Шпионы">ШПИОНЫ</li>
+                <li data-category="1234->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="1235" data-group="1235">
+                1235
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="1235">
+                <li data-category="1235->Трояны">ТРОЯНЫ</li>
+                <li data-category="1235->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="1235->Черви">ЧЕРВИ</li>
+                <li data-category="1235->Шпионы">ШПИОНЫ</li>
+                <li data-category="1235->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="1236" data-group="1236">
+                1236
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="1236">
+                <li data-category="1236->Трояны">ТРОЯНЫ</li>
+                <li data-category="1236->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="1236->Черви">ЧЕРВИ</li>
+                <li data-category="1236->Шпионы">ШПИОНЫ</li>
+                <li data-category="1236->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="1242" data-group="1242">
+                1242
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="1242">
+                <li data-category="1242->Трояны">ТРОЯНЫ</li>
+                <li data-category="1242->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="1242->Черви">ЧЕРВИ</li>
+                <li data-category="1242->Шпионы">ШПИОНЫ</li>
+                <li data-category="1242->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="1250" data-group="1250">
+                1250
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="1250">
+                <li data-category="1250->Трояны">ТРОЯНЫ</li>
+                <li data-category="1250->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="1250->Черви">ЧЕРВИ</li>
+                <li data-category="1250->Шпионы">ШПИОНЫ</li>
+                <li data-category="1250->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="1257" data-group="1257">
+                1257
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="1257">
+                <li data-category="1257->Трояны">ТРОЯНЫ</li>
+                <li data-category="1257->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="1257->Черви">ЧЕРВИ</li>
+                <li data-category="1257->Шпионы">ШПИОНЫ</li>
+                <li data-category="1257->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="1463" data-group="1463">
+                1463
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="1463">
+                <li data-category="1463->Трояны">ТРОЯНЫ</li>
+                <li data-category="1463->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="1463->Черви">ЧЕРВИ</li>
+                <li data-category="1463->Шпионы">ШПИОНЫ</li>
+                <li data-category="1463->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="2034" data-group="2034">
+                2034
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="2034">
+                <li data-category="2034->Трояны">ТРОЯНЫ</li>
+                <li data-category="2034->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="2034->Черви">ЧЕРВИ</li>
+                <li data-category="2034->Шпионы">ШПИОНЫ</li>
+                <li data-category="2034->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="2044" data-group="2044">
+                2044
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="2044">
+                <li data-category="2044->Трояны">ТРОЯНЫ</li>
+                <li data-category="2044->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="2044->Черви">ЧЕРВИ</li>
+                <li data-category="2044->Шпионы">ШПИОНЫ</li>
+                <li data-category="2044->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="2141" data-group="2141">
+                2141
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="2141">
+                <li data-category="2141->Трояны">ТРОЯНЫ</li>
+                <li data-category="2141->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="2141->Черви">ЧЕРВИ</li>
+                <li data-category="2141->Шпионы">ШПИОНЫ</li>
+                <li data-category="2141->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="2187" data-group="2187">
+                2187
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="2187">
+                <li data-category="2187->Трояны">ТРОЯНЫ</li>
+                <li data-category="2187->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="2187->Черви">ЧЕРВИ</li>
+                <li data-category="2187->Шпионы">ШПИОНЫ</li>
+                <li data-category="2187->Руткиты">РУТКИТЫ</li>
+            </ul>
+
+            <button class="category-btn" data-category="ИПС" data-group="ИПС">
+                ИПС
+                <span class="toggle-icon">▶</span>
+            </button>
+            <ul class="category-list collapsed" data-group="ИПС">
+                <li data-category="ИПС->Трояны">ТРОЯНЫ</li>
+                <li data-category="ИПС->Вымогатели">ВЫМОГАТЕЛИ</li>
+                <li data-category="ИПС->Черви">ЧЕРВИ</li>
+                <li data-category="ИПС->Шпионы">ШПИОНЫ</li>
+                <li data-category="ИПС->Руткиты">РУТКИТЫ</li>
+            </ul>
+        </div>
+
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="cyber-main">
+        <header class="cyber-header">
+            <h1><span class="neon-text">MALWARE</span> STORAGE</h1>
+
+        </header>
+        <!-- Секция с диаграммой -->
+        <section class="chart-section">
+            <div id="categoryChart" class="pie-chart"></div>
+            <div id="chartLegend" class="chart-legend"></div>
+        </section>
+        <!-- Форма загрузки -->
+        <section class="upload-section" id="uploadSection">
+            <h2 id="current-category"><span class="neon-blue">[</span> ОТПРАВИТЬ В: <span class="neon-pink">ВСЕ ФАЙЛЫ</span> <span class="neon-blue">]</span></h2>
+            <form id="uploadForm" enctype="multipart/form-data" class="cyber-form">
+                <div class="form-row">
+                    <div class="drag-drop-area" id="malware-drop-area">
+                        <input type="file" id="malware-upload" name="malware" accept=".zip,.rar,.7z" required>
+                        <label for="malware-upload" class="drag-drop-label">
+                            <span class="upload-icon">↑</span>
+                            <span class="upload-text">Перетащите архив или нажмите</span>
+                            <span class="file-requirements">(ZIP, RAR, 7Z)</span>
+                        </label>
+                        <div id="malware-filename" class="filename-display"></div>
+                    </div>
+
+                    <div class="drag-drop-area" id="report-drop-area">
+                        <input type="file" id="report-upload" name="report" accept=".docx" required>
+                        <label for="report-upload" class="drag-drop-label">
+                            <span class="upload-icon">↑</span>
+                            <span class="upload-text">Перетащите отчет или нажмите</span>
+                            <span class="file-requirements">(DOCX)</span>
+                        </label>
+                        <div id="report-filename" class="filename-display"></div>
+                    </div>
+                </div>
+
+                <button type="submit" class="cyber-submit-button">
+                    <span class="submit-icon">⏎</span>
+                    <span class="submit-text">ОТПРАВИТЬ</span>
+                </button>
+            </form>
+        </section>
+
+        <!-- Список файлов -->
+        <section class="files-section">
+            <h2><span class="neon-pink">[</span> ХРАНИЛКА <span class="neon-pink">]</span></h2>
+            <div id="fileList" class="file-grid"></div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
